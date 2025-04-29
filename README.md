@@ -51,3 +51,6 @@ After modifying the `.npmrc` file, you need to run `pnpm install` again to ensur
 ## License
 
 Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
+
+
+    // "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"

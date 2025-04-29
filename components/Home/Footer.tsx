@@ -12,6 +12,7 @@ export const Footer = () => {
     <footer className={`my-10 border-t  transition-opacity duration-500 `}>
       <div className="max-w-8xl mx-auto px-6 py-12 sm:px-8 lg:px-12">
         
+
         {/* Main Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-10 lg:gap-16">
           
@@ -42,7 +43,7 @@ export const Footer = () => {
               ].map((social) => (
                 <a 
                   key={social.icon} 
-                  href="#"
+                  href="/about"
                   className={`text-gray-500 ${social.color} transition-all duration-300 transform hover:-translate-y-1`}
                   aria-label={`${social.icon} link`}
                 >
@@ -67,7 +68,7 @@ export const Footer = () => {
                 {section.links.map((link) => (
                   <li key={link}>
                     <a 
-                      href="#"
+                      href="/about"
                       className="text-gray-600 hover:text-gray-900 text-base transition-colors duration-200 flex items-start group"
                     >
                       <span className="group-hover:underline decoration-2 underline-offset-4">
@@ -111,7 +112,7 @@ export const Footer = () => {
             {['Privacy Policy', 'Terms of Service', 'Cookie Settings', 'Accessibility'].map((item) => (
               <a 
                 key={item} 
-                href="#"
+                href="/about"
                 className="text-gray-600 hover:text-gray-900 text-sm transition-colors duration-200 whitespace-nowrap"
               >
                 {item}
