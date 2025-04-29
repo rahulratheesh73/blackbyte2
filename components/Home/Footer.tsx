@@ -9,7 +9,7 @@ export const Footer = () => {
   }, []);
 
   return (
-    <footer className={`my-10 border-t  transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <footer className={`my-10 border-t  transition-opacity duration-500 `}>
       <div className="max-w-8xl mx-auto px-6 py-12 sm:px-8 lg:px-12">
         
         {/* Main Grid */}
