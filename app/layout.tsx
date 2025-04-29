@@ -10,6 +10,7 @@ import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/Home/navbar";
 import AboutPage from "@/components/Home/About";
 import { Sites } from "@/components/Home/ourSites/Sites";
+import { Footer } from "@/components/Home/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -19,8 +20,11 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   icons: {
     icon: "/favicon.ico",
-  },
-};
+    // You can also specify different sizes and types
+    apple: '/apple-icon.png',
+    shortcut: '/favicon-16x16.png',
+  }
+}
 
 export const viewport: Viewport = {
   themeColor: [
@@ -52,6 +56,8 @@ export default function RootLayout({
             </main>
             <AboutPage/>
 <Sites/>
+
+<Footer/>
             {/* <footer className="w-full flex items-center justify-center py-3">
               <Link
                 isExternal
